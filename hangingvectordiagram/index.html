@@ -4,19 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hanging Vectors — Prototype</title>
-    <script type="module" crossorigin src="./assets/index-DZq8-cza.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-D-NlIsQ7.css">
+    <script type="module" crossorigin src="./assets/index-N57IHlzz.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DTdygVnh.css">
   </head>
   <body>
     <div class="app">
       <header>
-        <h1>Hanging Vectors — prototype (v3)</h1>
+        <h1>Hanging Vectors — prototype (v4)</h1>
         <p>
-          <strong>New in v2 — hierarchy (D16):</strong> strings with a dark-ringed knob (Revenue,
-          Retention) have children — click one to unfurl a sub-rail hanging from its knob.
-          Straight rail (D1, D5–D9): the analytical, accuracy-first view. Ring/curtain rail
-          (D2–D4): the exploration/aesthetic view — cheap fake-3D (D3), both ring gestures (D15)
-          sharing the same D10 flexible-string physics. Always interactive (D14).
+          <strong>New in v4 — quipu knots (D28):</strong> the 2nd metric tied onto each cord as
+          real khipu numbers, read bottom-up from the knob: figure-eight = 1, a long knot's
+          countable wraps = 2–9 (units), bead clusters = tens/hundreds digits, a bare band = 0,
+          and every 5th knot is bigger (count in fives). Too-short cords fall back to one
+          bucketed cluster captioned ×N. <strong>v2 — hierarchy (D16):</strong> strings with a
+          dark-ringed knob have children — press the knob to unfurl a sub-rail. Straight rail:
+          the analytical view; ring rail: the exploration view — all sharing the D10
+          flexible-string physics.
         </p>
       </header>
 
@@ -62,11 +65,16 @@
             </select>
           </div>
 
+          <!-- D29 (v4): ONE dropdown for the 2nd metric's encoding — consolidates the old
+               "Color mode" select (D8) and "Knob size" checkbox (D7) and adds D28's quipu
+               knots, the v4 headline. -->
           <div class="control-group">
-            <label class="title">Color mode</label>
-            <select id="color-mode">
-              <option value="group">Grouping</option>
-              <option value="heatmap">Heat-map (2nd metric)</option>
+            <label class="title">2nd metric encoding</label>
+            <select id="secondary-encoding">
+              <option value="none">None</option>
+              <option value="knob">Knob size (D7)</option>
+              <option value="heat">Heat-map (D8)</option>
+              <option value="quipu" selected>Quipu knots (D28)</option>
             </select>
           </div>
 
@@ -76,14 +84,6 @@
               <span id="heat-ramp-min"></span>
               <div class="heat-ramp-bar"></div>
               <span id="heat-ramp-max"></span>
-            </div>
-          </div>
-
-          <div class="control-group">
-            <label class="title">Knob size</label>
-            <div class="checkbox-row">
-              <input type="checkbox" id="knob-2nd-metric" />
-              <label for="knob-2nd-metric">Encode 2nd metric (D7)</label>
             </div>
           </div>
 
