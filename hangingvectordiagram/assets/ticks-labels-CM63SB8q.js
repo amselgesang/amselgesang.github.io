@@ -1,4 +1,4 @@
-import"./gallery-BujPCXpD.js";import{m as c,c as r,s as o,b as d,e as p,a as u}from"./feature-page-Bb6NZ_TH.js";const{controls:t,chart:h,note:i}=c({title:"Bead ticks & labels",intro:"Scale knots along the cord (D6) and optional value captions on the labels."}),a=r(h,{categories:d,groups:o,secondaryEncoding:"none",showTicks:!0,labelValues:!0,tickTarget:8});p(a);const l=document.createElement("div");l.className="control-group";l.innerHTML=`<label class="title">Scale reference</label>
+import"./gallery-BujPCXpD.js";import{m as c,c as r,s as o,b as d,e as p,a as u}from"./feature-page-Cx2VO2tp.js";const{controls:t,chart:h,note:i}=c({title:"Bead ticks & labels",intro:"Scale knots along the cord (D6) and optional value captions on the labels."}),a=r(h,{categories:d,groups:o,secondaryEncoding:"none",showTicks:!0,labelValues:!0,tickTarget:8});p(a);const l=document.createElement("div");l.className="control-group";l.innerHTML=`<label class="title">Scale reference</label>
   <div class="checkbox-row">
     <input type="checkbox" id="show-ticks" checked />
     <label for="show-ticks">Show thread knots (D6)</label>
